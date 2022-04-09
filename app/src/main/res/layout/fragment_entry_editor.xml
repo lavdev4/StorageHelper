@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".views.fragments.EntryEditorFragment">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/fragment_entry_editor_toolbar"
+            android:layout_width="0dp"
+            android:layout_height="?attr/actionBarSize"
+            android:fitsSystemWindows="true"
+            app:title="@string/fragment_entry_editor_toolbar_title"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <ImageButton
+                android:id="@+id/fragment_entry_editor_save_current_entry_button"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:contentDescription="@null"
+                android:src="@drawable/icon_entry_editor_toolbar_button_save_entry"
+                style="@style/StorageHelper.Button.ImageButton"/>
+        </androidx.appcompat.widget.Toolbar>
+        
+        <TextView
+            android:id="@+id/fragment_entry_editor_hint_text"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="2dp"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            style="@style/StorageHelper.TextView.Hints"/>
+
+        <Button
+            android:id="@+id/fragment_entry_editor_new_analyse_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/button_add"
+            style="@style/StorageHelper.Button.TextButton.Colored.SecondaryColor"
+            app:layout_constraintTop_toBottomOf="@id/fragment_entry_editor_toolbar"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/fragment_entry_editor_items_list"/>
+
+        <ToggleButton
+            android:id="@+id/fragment_entry_editor_edit_items_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:textOn="@string/button_done"
+            android:textOff="@string/button_edit"
+            style="@style/StorageHelper.Button.ToggleButton.Colored.SecondaryColor"
+            app:layout_constraintTop_toBottomOf="@id/fragment_entry_editor_toolbar"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/fragment_entry_editor_items_list"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fragment_entry_editor_items_list"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="30dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@id/fragment_entry_editor_new_analyse_button"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Bottom sheet -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fragment_entry_editor_bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        style="@style/StorageHelper.BottomSheet">
+
+        <ImageView
+            android:id="@+id/fragment_entry_editor_arrow"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:background="@color/primaryLightColor"
+            android:elevation="6dp"
+            android:src="@drawable/icon_dialog_choose_entry_group_direction_indicator"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/fragment_entry_editor_add_button"
+            android:contentDescription="@null"/>
+
+        <Button
+            android:id="@+id/fragment_entry_editor_add_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/button_add"
+            style="@style/StorageHelper.Button.TextButton.Colored.SecondaryColor"
+            app:layout_constraintBottom_toTopOf="@id/fragment_entry_editor_groups_list"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fragment_entry_editor_arrow" />
+
+        <ToggleButton
+            android:id="@+id/fragment_entry_editor_edit_groups_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:textOn="@string/button_done"
+            android:textOff="@string/button_remove"
+            app:layout_constraintTop_toTopOf="@id/fragment_entry_editor_add_button"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/fragment_entry_editor_add_button"
+            style="@style/StorageHelper.Button.ToggleButton.Colored.SecondaryColor"
+            tools:ignore="RelativeOverlap" />
+
+        <TextView
+            android:id="@+id/fragment_entry_editor_bottom_sheet_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_entry_editor_bottom_sheet_hint"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="@id/fragment_entry_editor_arrow"
+            app:layout_constraintLeft_toLeftOf="@id/fragment_entry_editor_groups_list"
+            app:layout_constraintRight_toRightOf="@id/fragment_entry_editor_groups_list"
+            app:layout_constraintBottom_toBottomOf="parent"
+            style="@style/StorageHelper.TextView.Hints"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fragment_entry_editor_groups_list"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fragment_entry_editor_add_button" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

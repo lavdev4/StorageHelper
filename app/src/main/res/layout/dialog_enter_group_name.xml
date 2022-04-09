@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/MaterialAlertDialog.MaterialComponents.Title.Panel.CenterStacked">
+
+    <EditText
+        android:id="@+id/dialog_enter_group_name_name_field"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="6dp"
+        android:importantForAutofill="no"
+        android:hint="@string/dialog_enter_group_name_name_field"
+        style="@style/StorageHelper.EditText.Symbolic" />
+</FrameLayout>

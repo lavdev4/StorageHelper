@@ -1,0 +1,32 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="StorageHelper.Theme.Light.NoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryVariant">@color/primaryDarkColor</item>
+        <item name="colorOnPrimary">@color/primaryTextColor</item>
+        <item name="android:textColorPrimary">@color/primaryTextColor</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorSecondaryVariant">@color/secondaryDarkColor</item>
+        <item name="colorOnSecondary">@color/secondaryTextColor</item>
+        <item name="android:textColorSecondary">@color/secondaryTextColor</item>
+        <!-- Customize your theme here. -->
+        <item name="android:colorBackground">@color/grayLight</item>
+        <item name="android:statusBarColor">@color/primaryDarkColor</item>
+        <item name="colorSurface">@color/primaryLightColor</item>
+        <!-- Styles -->
+        <item name="toolbarStyle">@style/StorageHelper.Toolbar</item>
+        <item name="bottomNavigationStyle">@style/StorageHelper.BottomBar</item>
+        <item name="cardViewStyle">@style/StorageHelper.CardView</item>
+        <item name="spinnerStyle">@style/StorageHelper.Spinner</item>
+        <item name="dropDownListViewStyle">@style/StorageHelper.DropdownList</item>
+        <item name="buttonBarPositiveButtonStyle">@style/StorageHelper.Button.TextButton.Colored.SecondaryColor</item>
+        <item name="buttonBarNegativeButtonStyle">@style/StorageHelper.Button.TextButton.Colored.SecondaryColor</item>
+    </style>
+
+    <style name="NumberPickerTheme">
+        <!-- Number picker divider color attr -->
+        <item name="colorControlNormal">#00FFFFFF</item>
+    </style>
+</resources>

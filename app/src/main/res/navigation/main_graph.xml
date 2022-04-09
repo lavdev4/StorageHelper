@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/fragment_entry_editor">
+    <fragment
+        android:id="@+id/fragment_entry_editor"
+        android:name="com.lavdevapp.storagehelper.views.fragments.EntryEditorFragment"
+        android:label="Entry items list"
+        tools:layout="@layout/fragment_entry_editor" />
+    <fragment
+        android:id="@+id/fragment_groups_report"
+        android:name="com.lavdevapp.storagehelper.views.fragments.GroupsReportFragment"
+        android:label="Group items total quantity report"
+        tools:layout="@layout/fragment_groups_report">
+        <action
+            android:id="@+id/action_fragment_groups_report_to_fragment_items_report"
+            app:destination="@id/fragment_items_report"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_items_report"
+        android:name="com.lavdevapp.storagehelper.views.fragments.ItemsReportFragment"
+        android:label="Items total quantity report"
+        tools:layout="@layout/fragment_items_report" />
+    <fragment
+        android:id="@+id/fragment_storage"
+        android:name="com.lavdevapp.storagehelper.views.fragments.StorageFragment"
+        android:label="Storage"
+        tools:layout="@layout/fragment_storage" />
+</navigation>

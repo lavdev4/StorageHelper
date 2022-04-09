@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/fragment_entry_editor"
+            android:title="@string/button_insert"
+            android:icon="@drawable/icon_bottom_bar_button_insert_items_icon_selector"/>
+        <item
+            android:id="@+id/fragment_groups_report"
+            android:title="@string/fragment_groups_report_title"
+            android:icon="@drawable/icon_bottombar_button_show_report_icon_selector"/>
+        <item
+            android:id="@+id/fragment_storage"
+            android:title="@string/fragment_storage_title"
+            android:icon="@drawable/icon_bottombar_button_show_storage_icon_selector"/>
+</menu>

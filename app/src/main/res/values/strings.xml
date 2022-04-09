@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Кладовщик</string>
+    <!-- Buttons -->
+    <string name="button_add">Добавить</string>
+    <string name="button_remove">Удалить</string>
+    <string name="button_edit">Изменить</string>
+    <string name="button_cancel">Отмена</string>
+    <string name="button_done">Готово</string>
+    <string name="button_submit">Подтвердить</string>
+    <string name="button_insert">Внести</string>
+    <string name="button_close">Закрыть</string>
+    <!---->
+    <string name="month_hint">Месяц:</string>
+    <string name="year_hint">Год:</string>
+    <!-- Dialogs -->
+    <string name="dialog_choose_date_hint">После того как вы нажмете \"Подтвердить\" выбранные данные будут сохранены и их нельзя будет изменить.</string>
+    <string name="dialog_choose_date_checkbox_hint">Зафиксировать с текущей датой</string>
+    <string name="dialog_enter_group_name_name_field">Введите название группы</string>
+    <string name="dialog_create_item_name_field_hint">Имя предмета</string>
+    <string name="dialog_create_item_quantity_field_hint">Количество</string>
+    <string name="dialog_choose_items_from_storage_title">Добавить предметы со склада</string>
+    <string name="dialog_create_item_title">Добавить предмет</string>
+    <string name="dialog_create_item_message">Предмет будет добавлен на склад.</string>
+    <string name="dialog_enter_group_name_title">Добавить группу</string>
+    <string name="dialog_error_title">Ошибка:</string>
+    <string name="dialog_error_positive_button_title">Скопировать текст</string>
+    <string name="dialog_choose_date_title">Сохранить</string>
+    <string name="dialog_choose_items_from_storage_hint">Склад пуст или же все возможные наименования уже добавлены.</string>
+    <!-- Menus -->
+    <string name="menu_groups_report_fragment_toolbar_delete_month">Выбранный месяц</string>
+    <string name="menu_groups_report_fragment_toolbar_delete_year">Выбранный год</string>
+    <!-- Fragment Entry Editor -->
+    <string name="fragment_entry_editor_new_analyse_button">Анализ</string>
+    <string name="fragment_entry_editor_selector_button">Отделения</string>
+    <string name="fragment_entry_editor_toast_storage_empty_text">Недостаточно на складе</string>
+    <string name="fragment_entry_editor_toolbar_title">Внести данные</string>
+    <string name="fragment_entry_editor_bottom_sheet_hint">Пусто</string>
+    <!-- Fragment Groups Report -->
+    <string name="fragment_groups_report_title">Отчет</string>
+    <string name="fragment_groups_report_month_sum_hint">За месяц:</string>
+    <string name="fragment_groups_report_top_sums_headline">Суммарный результат:</string>
+    <string name="fragment_groups_report_hint_text">Отчетов нет</string>
+    <string name="fragment_groups_report_year_sum_hint">За год:</string>
+    <!-- Fragment Storage -->
+    <string name="fragment_storage_title">Склад</string>
+    <string name="fragment_storage_checkbox">Учитывать наличие на складе</string>
+    <string name="fragment_storage_name_exists_error_name">Такое имя уже существует.</string>
+    <string name="fragment_storage_name_exists_error_text">Введите другое имя.</string>
+</resources>

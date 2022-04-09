@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.fragments.GroupsReportFragment">
+
+    <TextView
+        android:id="@+id/fragment_groups_report_hint_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_groups_report_hint_text"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/fragment_groups_report_all_views_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="fragment_groups_report_toolbar,
+        fragment_groups_report_groups_list"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/fragment_groups_report_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:contentInsetStart="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="330dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_gravity="start">
+
+            <TextView
+                android:id="@+id/fragment_groups_report_year_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/year_hint"
+                style="@style/StorageHelper.TextView.Hints"
+                app:layout_constraintTop_toTopOf="@id/fragment_groups_report_year_spinner"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/fragment_groups_report_year_spinner"/>
+
+            <Spinner
+                android:id="@+id/fragment_groups_report_year_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/fragment_groups_report_year_hint"/>
+
+            <TextView
+                android:id="@+id/fragment_groups_report_month_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/month_hint"
+                style="@style/StorageHelper.TextView.Hints"
+                app:layout_constraintTop_toTopOf="@id/fragment_groups_report_month_spinner"
+                app:layout_constraintLeft_toRightOf="@id/fragment_groups_report_year_spinner"
+                app:layout_constraintBottom_toBottomOf="@id/fragment_groups_report_month_spinner"/>
+
+            <Spinner
+                android:id="@+id/fragment_groups_report_month_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                app:layout_constraintTop_toTopOf="@id/fragment_groups_report_year_spinner"
+                app:layout_constraintStart_toEndOf="@id/fragment_groups_report_month_hint"/>
+
+            <TextView
+                android:id="@+id/fragment_groups_report_top_sums_headline"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/fragment_groups_report_top_sums_headline"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/fragment_groups_report_year_spinner"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                style="@style/StorageHelper.TextView.Titles"/>
+
+            <TextView
+                android:id="@+id/fragment_groups_report_year_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintTop_toBottomOf="@id/fragment_groups_report_top_sums_headline"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/fragment_groups_report_month_quantity"
+                style="@style/StorageHelper.TextView.Hints"/>
+
+            <TextView
+                android:id="@+id/fragment_groups_report_month_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/fragment_groups_report_top_sums_headline"
+                app:layout_constraintLeft_toRightOf="@id/fragment_groups_report_year_quantity"
+                app:layout_constraintRight_toRightOf="parent"
+                style="@style/StorageHelper.TextView.Hints"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragment_groups_report_groups_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/fragment_groups_report_toolbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
