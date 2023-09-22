@@ -4,22 +4,22 @@
 <details>
   <summary><b>🏞️Скриншоты</b></summary>
     <p align="center">
-      <img width="20%" height="20%" src="https://github.com/lavdev4/StorageHelper/assets/103329075/44c4d06d-a8e0-4b2a-87da-4ce7097a2c0b">
+      <img width="30%" height="30%" src="https://github.com/lavdev4/StorageHelper/assets/103329075/ee901853-9e3d-4f98-ace0-f03b63d0fc39">
     </p>
     <p align="center">
-      <img width="20%" height="20%" src="https://github.com/lavdev4/StorageHelper/assets/103329075/c2f48a69-8995-4e4a-b738-c1c61c8444bb">
+      <img width="30%" height="30%" src="https://github.com/lavdev4/StorageHelper/assets/103329075/08666e69-7a2c-4694-8a65-762a77a6de26">
     </p>
     <p align="center">
-      <img width="20%" height="20%" src="https://github.com/lavdev4/StorageHelper/assets/103329075/392e6c40-46ea-4c51-9f8d-8529155d8819">
+      <img width="30%" height="30%" src="https://github.com/lavdev4/StorageHelper/assets/103329075/77228b02-7b88-4f0f-8c42-a9a5e7b31de7">
     </p>
     <p align="center">
-      <img width="20%" height="20%" src="https://github.com/lavdev4/StorageHelper/assets/103329075/b45cfb72-459a-4665-b84d-ae109b7be6d3">
+      <img width="30%" height="30%" src="https://github.com/lavdev4/StorageHelper/assets/103329075/92f72c9d-d0a4-4c94-8367-a8298c4524c0">
     </p>
     <p align="center">
-      <img width="20%" height="20%" src="https://github.com/lavdev4/StorageHelper/assets/103329075/5f3c520a-9681-4b62-a597-4f499d2c8021">
+      <img width="30%" height="30%" src="https://github.com/lavdev4/StorageHelper/assets/103329075/e227ccfb-dfc5-412b-9451-b6d3f50e5cde">
     </p>
     <p align="center">
-      <img width="20%" height="20%" src="https://github.com/lavdev4/StorageHelper/assets/103329075/476b8c2c-8687-4ac6-b7ac-e9b6c5e15bab">
+      <img width="30%" height="30%" src="https://github.com/lavdev4/StorageHelper/assets/103329075/c68df2a3-d028-4f92-bd47-2f1dc9791f8b">
     </p>
 </details>
 
